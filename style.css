@@ -44,7 +44,7 @@ header {
 }
 
 .menu li a:hover {
-    background-color: rgb(167, 171, 175);
+    background-color: rgb(239, 236, 236);
     border-radius: 10px;
 }
 
@@ -94,6 +94,7 @@ header {
 
 .img img {
     max-width: 600px;
+    animation: flutuar 1.0s alternate infinite;
 }
 
 .txt h2 {
@@ -105,6 +106,29 @@ header {
     font-size: 1.3rem
 }
 
+@keyframes flutuar {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
+}
 
 /* HOME */
 
+.about {
+    padding: 40px;
+    margin: 5%;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.info {
+    display: flex;
+
+}
